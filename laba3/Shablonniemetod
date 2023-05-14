@@ -1,0 +1,30 @@
+class AbstractClass:
+    def template_method(self):
+        self.step_one()
+        self.step_two()
+        self.step_three()
+
+def step_one(self):
+    pass
+
+def step_two(self):
+    pass
+
+def step_three(self):
+    pass
+
+
+class ConcreteClass(AbstractClass):
+    def step_one(self):
+        print("Step 1")
+
+    def step_two(self):
+        print("Step 2")
+
+    def step_three(self):
+        print("Step 3")
+
+
+        if __name__ == "__main__":
+            concrete = ConcreteClass()
+            concrete.template_method()
